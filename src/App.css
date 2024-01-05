@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  background-color: #111111;
+}
+
+#root{
+  max-width: 100vw;
+}
+
+.App {
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main{
+  min-height: 100vh;
+}
+
+.news{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 122.5px;
+  right: 20px;
+}
+
+.news-btn{
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.news-btn:hover{
+  text-decoration: underline;
+}
+
+.news-svg {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+  stroke-width: 3;
+  font-weight: bold;
+  padding-left:3px;
+  position: absolute;
+  top: 6px;
+}
+
+.reload-svg{
+  stroke: white;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.headerContainer h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  margin-inline: 10px;
+  text-align: center;
+}
+
+.headerContainer input {
+  padding: 5px 10px 5px 10px;
+  /* width: 280px; */
+  height: 40px;
+  background-color: #1c7ac7;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttonContainer img {
+  height: 45px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+
+::placeholder {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.headerContainer input:focus {
+  outline: none;
+  border-bottom: solid #def2f1 2px;
+  transform: scale(1.05);
+}
+
+
+.coinsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.loadingMsg {
+  color: white;
+}
+
+@media  (max-width: 632px) {
+  .coinsContainer{
+    overflow-x: scroll;
+    margin: 20px;
+  }
+}
+
+@media (max-width:587px) {
+  .news{
+    top:200px;
+    left: calc(50vw - 50%);
+  }
+  .coinsContainer{
+    margin-top: 60px;
+  }
+}
+
+@media(min-width:588px){
+  .headerContainer input{
+    width: 280px;
+  }
+}
+

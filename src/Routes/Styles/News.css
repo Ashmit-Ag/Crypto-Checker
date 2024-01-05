@@ -1,0 +1,142 @@
+.crypto-news-container {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    max-width: 95vw;
+  }
+
+  h2{
+    font-size: 3em;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3em;
+  }
+
+  .back-svg{
+    stroke: white;
+   cursor: pointer;
+  }
+  
+  .back-btn{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .back:hover{
+    text-decoration: underline;
+  }
+  
+  .navbar button{
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .navbar button:hover{
+    text-decoration: underline;
+  }
+
+
+  .crypto-news-cards {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .crypto-news-card {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #333; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .crypto-news-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .crypto-placeholder-image {
+    text-align: center;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #555;
+    border-radius: 10px;
+  }
+  
+  .crypto-placeholder-image p {
+    margin: 0;
+  }
+
+  .crypto-news-content {
+    text-align: left;
+    padding: 5px;
+    
+  }
+  
+  .crypto-news-content h3 {
+    margin-bottom: 10px;
+    
+  }
+  
+  .crypto-news-content p{
+    margin-top: 25px;
+  }
+
+  .read-more-link {
+    color: #61dafb; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .read-more-link:hover {
+    text-decoration: underline;
+  }
+
+  .loading {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .spinner {
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-top: 8px solid #61dafb;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .crypto-news-content,
+  .crypto-news-content h3,
+  .crypto-news-content p{
+    background-color: #333;
+  }
+
+  @media(min-width:424px){
+    .crypto-news-container{
+      max-width: 80vw;
+    }
+  }
