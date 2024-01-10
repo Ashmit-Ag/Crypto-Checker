@@ -17,7 +17,7 @@ const CryptoNews = () => {
         params: {
           country: "us",
           category: "business",
-          apiKey: "a054d1a7b39944e7bda974c092924125",
+          apiKey:process.env.NEWS_API_KEY,
         },
       });
 
